@@ -1,0 +1,77 @@
+Strategy=SetTransformerOG:
+
+       Experiment  training_time training_memory_usage       inference_time   mean_rewards          loss              flops         parameters
+0  model_dim = 16  139.43 ± 0.78   0.00e+00 ± 0.00e+00  5.16e-04 ± 2.49e-05   92.29 ± 5.60  -0.33 ± 0.32   33.18 ± 0.00e+00   15.68 ± 1.09e-15
+1  model_dim = 32  358.12 ± 3.15   0.00e+00 ± 0.00e+00  5.08e-04 ± 2.54e-05   91.28 ± 8.64  -0.36 ± 0.30  114.28 ± 0.00e+00   56.96 ± 0.00e+00
+2  model_dim = 48  648.61 ± 2.52   0.00e+00 ± 0.00e+00  4.82e-04 ± 1.74e-05  100.41 ± 3.53  -1.01 ± 0.15  243.30 ± 1.74e-14  123.84 ± 8.68e-15
+3  model_dim = 64  662.95 ± 7.28   0.00e+00 ± 0.00e+00  4.97e-04 ± 1.70e-05  100.68 ± 3.82  -0.97 ± 0.19  420.26 ± 3.47e-14  216.32 ± 0.00e+00
+
+
+Strategy=SetTransformer:
+
+       Experiment  training_time training_memory_usage       inference_time   mean_rewards          loss              flops         parameters
+0  model_dim = 16  146.47 ± 2.15   0.00e+00 ± 0.00e+00  5.20e-04 ± 3.04e-05   94.31 ± 3.10  -0.30 ± 0.25   32.92 ± 0.00e+00   17.08 ± 2.17e-15
+1  model_dim = 32  191.78 ± 1.77   0.00e+00 ± 0.00e+00  5.26e-04 ± 2.14e-05   98.77 ± 2.31  -0.63 ± 0.14  110.50 ± 0.00e+00   59.78 ± 4.34e-15
+2  model_dim = 48  478.22 ± 2.55   0.00e+00 ± 0.00e+00  5.38e-04 ± 2.23e-05  100.19 ± 3.56  -0.68 ± 0.13  232.70 ± 1.74e-14  128.06 ± 0.00e+00
+3  model_dim = 64  521.88 ± 1.37   0.00e+00 ± 0.00e+00  5.73e-04 ± 2.67e-05   98.28 ± 3.70  -0.97 ± 0.15  399.56 ± 0.00e+00  221.96 ± 1.74e-14
+
+
+Strategy=Transformer:
+
+       Experiment  training_time training_memory_usage       inference_time  mean_rewards         loss               flops         parameters
+0  model_dim = 16  462.70 ± 5.34   0.00e+00 ± 0.00e+00  4.98e-04 ± 8.97e-06  96.61 ± 2.61  0.77 ± 0.15   302.28 ± 3.47e-14  151.26 ± 0.00e+00
+1  model_dim = 32  540.15 ± 1.86   0.00e+00 ± 0.00e+00  4.96e-04 ± 1.77e-05  98.28 ± 3.18  0.33 ± 0.20   579.16 ± 0.00e+00  289.82 ± 3.47e-14
+2  model_dim = 48  577.65 ± 1.94   0.00e+00 ± 0.00e+00  4.83e-04 ± 8.06e-06  99.04 ± 2.62  0.24 ± 0.15   864.22 ± 0.00e+00  432.48 ± 0.00e+00
+3  model_dim = 64  577.44 ± 2.04   0.00e+00 ± 0.00e+00  4.76e-04 ± 3.32e-06  94.04 ± 4.17  0.18 ± 0.19  1157.48 ± 0.00e+00  579.24 ± 0.00e+00
+
+
+
+\begin{table}[]
+\begin{tabular}{cccc}
+\hline
+Strategy                          & Model Dimensions & Training Time & Mean Rewards           \\ \hline
+\multirow{4}{*}{SetTransformer}   & $16$ & $146.47 \pm 2.15 $ &  $94.31 \pm 3.10 $          \\
+                                  & $32$ & $191.78 \pm 1.77 $ &  $98.77 \pm 2.31 $          \\
+                                  & $48$ & $478.22 \pm 2.55 $ &  $\mathbf{100.19 \pm 3.56}$ \\
+                                  & $64$ & $521.88 \pm 1.37 $ &  $\mathit{98.28 \pm 3.70}$  \\ \hline
+
+\multirow{4}{*}{SetTransformerOG} & $16$ & $139.43 \pm 0.78 $ &  $92.29 \pm 5.60 $          \\
+                                  & $32$ & $358.12 \pm 3.15 $ &  $91.28 \pm 8.64 $          \\
+                                  & $48$ & $648.61 \pm 2.52 $ &  $\mathit{100.41 \pm 3.53}$ \\
+                                  & $64$ & $662.95 \pm 7.28 $ &  $\mathbf{100.68 \pm 3.82}$ \\ \hline
+
+\multirow{4}{*}{Transformer}      & $16$ & $462.70 \pm 5.34 $ &  $96.61 \pm 2.61 $          \\
+                                  & $32$ & $540.15 \pm 1.86 $ &  $\mathit{98.28 \pm 3.18}$  \\
+                                  & $48$ & $577.65 \pm 1.94 $ &  $\mathbf{99.04 \pm 2.62}$  \\
+                                  & $64$ & $577.44 \pm 2.04 $ &  $94.04 \pm 4.17 $          \\ \hline
+\end{tabular}
+\caption{Metrics of changing model dimensions for transformer approaches.}
+\label{fig:exp-trans-model-dims-table}
+\end{table}
+
+
+\begin{table}[]
+\begin{tabular}{cccccc}
+\hline
+Strategy & Model Dim. & Inference Time & Loss & FLOPs & Parameters \\ \hline
+\multirow{4}{*}{SetTransformer}
+  & $16$ & $5.20 \times 10^{-4} \pm 3.04 \times 10^{-5}$ & $-0.30 \pm 0.25$ & $32.92$ & $17.08$ \\
+  & $32$ & $5.26 \times 10^{-4} \pm 2.14 \times 10^{-5}$ & $-0.63 \pm 0.14$ & $110.50$ & $59.78$ \\
+  & $48$ & $5.38 \times 10^{-4} \pm 2.23 \times 10^{-5}$ & $-0.68 \pm 0.13$ & $232.70$ & $128.06$ \\
+  & $64$ & $5.73 \times 10^{-4} \pm 2.67 \times 10^{-5}$ & $-0.97 \pm 0.15$ & $399.56$ & $221.96$ \\ \hline
+
+\multirow{4}{*}{SetTransformerOG}
+  & $16$ & $5.16 \times 10^{-4} \pm 2.49 \times 10^{-5}$ & $-0.33 \pm 0.32$ & $33.18$ & $15.68$ \\
+  & $32$ & $5.08 \times 10^{-4} \pm 2.54 \times 10^{-5}$ & $-0.36 \pm 0.30$ & $114.28$ & $56.96$ \\
+  & $48$ & $4.82 \times 10^{-4} \pm 1.74 \times 10^{-5}$ & $-1.01 \pm 0.15$ & $243.30$ & $123.84$ \\
+  & $64$ & $4.97 \times 10^{-4} \pm 1.70 \times 10^{-5}$ & $-0.97 \pm 0.19$ & $420.26$ & $216.32$ \\ \hline
+
+\multirow{4}{*}{Transformer}
+  & $16$ & $4.98 \times 10^{-4} \pm 8.97 \times 10^{-6}$ & $0.77 \pm 0.15$ & $302.28$ & $151.26$ \\
+  & $32$ & $4.96 \times 10^{-4} \pm 1.77 \times 10^{-5}$ & $0.33 \pm 0.20$ & $579.16$ & $289.82$ \\
+  & $48$ & $4.83 \times 10^{-4} \pm 8.06 \times 10^{-6}$ & $0.24 \pm 0.15$ & $864.22$ & $432.48$ \\
+  & $64$ & $4.76 \times 10^{-4} \pm 3.32 \times 10^{-6}$ & $0.18 \pm 0.19$ & $1157.48$ & $579.24$ \\ \hline
+\end{tabular}
+\caption{Inference time, loss, FLOPs, and parameter counts for varying model dimensions across transformer-based strategies.}
+\label{fig:app-trans-model-dims-table-extra}
+\end{table}

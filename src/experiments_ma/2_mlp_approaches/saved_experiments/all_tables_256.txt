@@ -1,0 +1,131 @@
+### All with DS_core_num_cells=256
+
+
+
+Strategy: DS; Depth: None
+  Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0         DS  102.48 ± 3.82    4252.44                      6.05e-04 ± 2.06e-05  98.95 ± 3.49  -0.63 ± 0.21  281.60  140.80
+
+Strategy: DS; Depth: 1
+                 Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0  embedding_num_cells = 16  113.81 ± 1.16    4358.32                      6.28e-04 ± 2.11e-05  88.25 ± 3.81   0.09 ± 0.24  283.78  141.88
+1  embedding_num_cells = 32  116.49 ± 1.09    4503.18                      5.90e-04 ± 1.44e-05  91.68 ± 4.54  -0.05 ± 0.25  304.38  152.20
+2  embedding_num_cells = 48  118.05 ± 0.21    4648.48                      6.07e-04 ± 1.65e-05  95.04 ± 4.36  -0.20 ± 0.35  327.04  163.52
+3  embedding_num_cells = 64  120.47 ± 0.60    4794.82                      6.24e-04 ± 1.72e-05  90.72 ± 3.47  -0.11 ± 0.23  351.74  175.88
+
+
+Strategy: DS; Depth: 2
+                 Experiment  training_time training_memory_usage       inference_time   mean_rewards             loss              flops         parameters
+0  embedding_num_cells = 16  118.50 ± 0.98    4417.38                      6.64e-04 ± 3.28e-05   94.00 ± 3.32     -0.14 ± 0.25  284.86  142.44
+1  embedding_num_cells = 32  119.29 ± 0.91    4621.72                      6.14e-04 ± 2.37e-05   92.09 ± 3.12     -0.02 ± 0.19  308.62  154.30
+2  embedding_num_cells = 48  122.19 ± 0.59    4827.44                      6.03e-04 ± 1.71e-05   90.29 ± 4.73  6.12e-03 ± 0.22  336.46  168.22
+3  embedding_num_cells = 64  122.60 ± 0.54    5034.88                      6.04e-04 ± 7.46e-06  89.55 ± 10.24     -0.07 ± 0.35  368.38  184.20
+
+
+
+Strategy: DS_LOCAL; Depth: None
+  Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0   DS_LOCAL  105.61 ± 1.82    4372.17                      6.05e-04 ± 1.24e-05  95.97 ± 3.74  -0.42 ± 0.19  297.98  149.00
+
+
+Strategy: DS_LOCAL; Depth: 1
+                 Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0  embedding_num_cells = 16  120.13 ± 1.51    4886.61                      6.19e-04 ± 2.33e-05  95.47 ± 5.04  -0.11 ± 0.33  300.16  150.08
+1  embedding_num_cells = 32  127.34 ± 1.39    5526.08                      6.27e-04 ± 2.63e-05  92.74 ± 3.92  -0.20 ± 0.23  320.78  160.38
+2  embedding_num_cells = 48  129.37 ± 0.98    6166.56                      6.01e-04 ± 1.48e-05  90.89 ± 3.61  -0.21 ± 0.29  343.42  171.72
+3  embedding_num_cells = 64  131.29 ± 1.14    6810.60                      6.35e-04 ± 3.01e-05  90.62 ± 4.56  -0.34 ± 0.22  368.14  184.06
+
+
+Strategy: DS_LOCAL; Depth: 2
+                 Experiment  training_time training_memory_usage      inference_time  mean_rewards          loss              flops         parameters
+0  embedding_num_cells = 16  126.49 ± 2.35    4946.09                     6.29e-04 ± 2.89e-05  95.73 ± 4.20  -0.35 ± 0.36  301.26  150.62
+1  embedding_num_cells = 32  131.06 ± 2.22    5646.94                     6.49e-04 ± 2.23e-05  93.55 ± 4.91  -0.44 ± 0.32  325.00  162.50
+2  embedding_num_cells = 48  134.37 ± 0.64    6351.44                     6.67e-04 ± 1.36e-05  89.77 ± 5.42   0.01 ± 0.22  352.84  176.42
+3  embedding_num_cells = 64  140.23 ± 1.94    7059.99                     6.64e-04 ± 3.98e-05  93.16 ± 3.63  -0.21 ± 0.33  384.78  192.38
+
+
+
+Strategy: DS_GLOBAL; Depth: None
+  Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0  DS_GLOBAL  100.17 ± 3.01    4272.57                      6.21e-04 ± 1.21e-05  94.23 ± 3.54  -0.32 ± 0.23  297.98  149.00
+
+Strategy: DS_GLOBAL; Depth: 1
+                 Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters
+0  embedding_num_cells = 16  111.92 ± 1.78    4393.49                      6.07e-04 ± 1.64e-05  94.67 ± 2.78  -0.45 ± 0.26  300.16  150.08
+1  embedding_num_cells = 32  112.86 ± 0.71    4538.40                      6.37e-04 ± 2.66e-05  93.49 ± 3.01  -0.17 ± 0.29  320.78  160.38
+2  embedding_num_cells = 48  111.55 ± 1.09    4683.60                      6.43e-04 ± 3.66e-05  91.15 ± 3.17  -0.16 ± 0.22  343.42  171.72
+3  embedding_num_cells = 64  115.36 ± 0.41    4830.03                      6.06e-04 ± 1.33e-05  89.29 ± 5.72  -0.17 ± 0.28  368.14  184.06
+
+
+Strategy: DS_GLOBAL; Depth: 2
+                 Experiment  training_time training_memory_usage       inference_time  mean_rewards          loss              flops         parameters  
+0  embedding_num_cells = 16  112.05 ± 2.16    4452.33                      6.18e-04 ± 5.90e-05  97.78 ± 5.33  -0.55 ± 0.31  301.26  150.62
+1  embedding_num_cells = 32  115.41 ± 0.51    4656.78                      6.12e-04 ± 2.15e-05  95.72 ± 2.77  -0.30 ± 0.22  325.00  162.50
+2  embedding_num_cells = 48  117.66 ± 0.65    4862.74                      6.13e-04 ± 1.26e-05  90.45 ± 5.34  -0.31 ± 0.12  352.84  176.42
+3  embedding_num_cells = 64  118.49 ± 0.61    5070.04                      6.16e-04 ± 1.33e-05  91.72 ± 3.85  -0.34 ± 0.29  384.78  192.38
+
+
+
+\begin{table}[]
+\resizebox{\textwidth}{!}{
+\begin{tabular}{cccccccccc}
+\hline
+\textbf{Strategy}            & \textbf{Depth}     & \textbf{Cells} & \textbf{Training Time} & \textbf{Memory} & \textbf{Inference Time} & \textbf{Reward}  & \textbf{Loss}     & \textbf{Flops} & \textbf{Parameter} \\ \hline
+\multirow{9}{*}{DS}          & None               & None           & $102.48 \pm 3.82$       & $4252.44$                & $6.05 \cdot 10^{-4} \pm 2.06 \cdot 10^{-5}$ & $98.95 \pm 3.49$ & $-0.63 \pm 0.21 $ & $281.60 $       & $140.80$            \\ \cline{2-10}
+                             & \multirow{4}{*}{1} & $16$           & $113.81 \pm 1.16$       & $4358.32$                & $6.28 \cdot 10^{-4} \pm 2.11 \cdot 10^{-5}$ & $88.25 \pm 3.81$ & $0.09 \pm 0.24 $  & $283.78 $       & $141.88$            \\
+                             &                    & $32$           & $116.49 \pm 1.09$       & $4503.18$                & $5.90 \cdot 10^{-4} \pm 1.44 \cdot 10^{-5}$ & $91.68 \pm 4.54$ & $-0.05 \pm 0.25 $ & $304.38 $       & $152.20$            \\
+                             &                    & $48$           & $118.05 \pm 0.21$       & $4648.48$                & $6.07 \cdot 10^{-4} \pm 1.65 \cdot 10^{-5}$ & $95.04 \pm 4.36$ & $-0.20 \pm 0.35 $ & $327.04$       & $163.52$            \\
+                             &                    & $64$           & $120.47 \pm 0.60$       & $4794.82$                & $6.24 \cdot 10^{-4} \pm 1.72 \cdot 10^{-5}$ & $90.72 \pm 3.47$ & $-0.11 \pm 0.23 $ & $351.74$       & $175.88$            \\ \cline{2-10}
+                             & \multirow{4}{*}{2} & $16$           & $118.50 \pm 0.98$       & $4417.38$                & $6.64 \cdot 10^{-4} \pm 3.28 \cdot 10^{-5}$ & $94.00 \pm 3.32$ & $-0.14 \pm 0.25 $ & $284.86 $       & $142.44$            \\
+                             &                    & $32$           & $119.29 \pm 0.91$       & $4621.72$                & $6.14 \cdot 10^{-4} \pm 2.37 \cdot 10^{-5}$ & $92.09 \pm 3.12$ & $-0.02 \pm 0.19 $ & $308.62 $       & $154.30$            \\
+                             &                    & $48$           & $122.19 \pm 0.59$       & $4827.44$                & $6.03 \cdot 10^{-4} \pm 1.71 \cdot 10^{-5}$ & $90.29 \pm 4.73$ & $0.0061 \pm 0.22$ & $336.46$       & $168.22$            \\
+                             &                    & $64$           & $122.60 \pm 0.54$       & $5034.88$                & $6.04 \cdot 10^{-4} \pm 7.46 \cdot 10^{-6}$ & $89.55 \pm 10.24$ & $-0.07 \pm 0.35$ & $368.38$       & $184.20$            \\ \hline
+\multirow{9}{*}{DS\_LOCAL}   & None               & None           & $105.61 \pm 1.82$       & $4372.17$                & $6.05 \cdot 10^{-4} \pm 1.24 \cdot 10^{-5}$ & $95.97 \pm 3.74$ & $-0.42 \pm 0.19 $ & $297.98 $       & $149.00$            \\ \cline{2-10}
+                             & \multirow{4}{*}{1} & $16$           & $120.13 \pm 1.51$       & $4886.61$                & $6.19 \cdot 10^{-4} \pm 2.33 \cdot 10^{-5}$ & $95.47 \pm 5.04$ & $-0.11 \pm 0.33 $ & $300.16 $       & $150.08$            \\
+                             &                    & $32$           & $127.34 \pm 1.39$       & $5526.08$                & $6.27 \cdot 10^{-4} \pm 2.63 \cdot 10^{-5}$ & $92.74 \pm 3.92$ & $-0.20 \pm 0.23 $ & $320.78 $       & $160.38$            \\
+                             &                    & $48$           & $129.37 \pm 0.98$       & $6166.56$                & $6.01 \cdot 10^{-4} \pm 1.48 \cdot 10^{-5}$ & $90.89 \pm 3.61$ & $-0.21 \pm 0.29 $ & $343.42$       & $171.72$            \\
+                             &                    & $64$           & $131.29 \pm 1.14$       & $6810.60$                & $6.35 \cdot 10^{-4} \pm 3.01 \cdot 10^{-5}$ & $90.62 \pm 4.56$ & $-0.34 \pm 0.22 $ & $368.14$       & $184.06$            \\ \cline{2-10}
+                             & \multirow{4}{*}{2} & $16$           & $126.49 \pm 2.35$       & $4946.09$                & $6.29 \cdot 10^{-4} \pm 2.89 \cdot 10^{-5}$ & $95.73 \pm 4.20$ & $-0.35 \pm 0.36 $ & $301.26 $       & $150.62$            \\
+                             &                    & $32$           & $131.06 \pm 2.22$       & $5646.94$                & $6.49 \cdot 10^{-4} \pm 2.23 \cdot 10^{-5}$ & $93.55 \pm 4.91$ & $-0.44 \pm 0.32 $ & $325.00 $       & $162.50$            \\
+                             &                    & $48$           & $134.37 \pm 0.64$       & $6351.44$                & $6.67 \cdot 10^{-4} \pm 1.36 \cdot 10^{-5}$ & $89.77 \pm 5.42$ & $0.01 \pm 0.22 $  & $352.84$       & $176.42$            \\
+                             &                    & $64$           & $140.23 \pm 1.94$       & $7059.99$                & $6.64 \cdot 10^{-4} \pm 3.98 \cdot 10^{-5}$ & $93.16 \pm 3.63$ & $-0.21 \pm 0.33 $ & $384.78$       & $192.38$            \\ \hline
+\multirow{9}{*}{DS\_GLOBAL}  & None               & None           & $100.17 \pm 3.01$       & $4272.57$                & $6.21 \cdot 10^{-4} \pm 1.21 \cdot 10^{-5}$ & $94.23 \pm 3.54$ & $-0.32 \pm 0.23 $ & $297.98 $       & $149.00$            \\ \cline{2-10}
+                             & \multirow{4}{*}{1} & $16$           & $111.92 \pm 1.78$       & $4393.49$                & $6.07 \cdot 10^{-4} \pm 1.64 \cdot 10^{-5}$ & $94.67 \pm 2.78$ & $-0.45 \pm 0.26 $ & $300.16 $       & $150.08$            \\
+                             &                    & $32$           & $112.86 \pm 0.71$       & $4538.40$                & $6.37 \cdot 10^{-4} \pm 2.66 \cdot 10^{-5}$ & $93.49 \pm 3.01$ & $-0.17 \pm 0.29 $ & $320.78 $       & $160.38$            \\
+                             &                    & $48$           & $111.55 \pm 1.09$       & $4683.60$                & $6.43 \cdot 10^{-4} \pm 3.66 \cdot 10^{-5}$ & $91.15 \pm 3.17$ & $-0.16 \pm 0.22 $ & $343.42$       & $171.72$            \\
+                             &                    & $64$           & $115.36 \pm 0.41$       & $4830.03$                & $6.06 \cdot 10^{-4} \pm 1.33 \cdot 10^{-5}$ & $89.29 \pm 5.72$ & $-0.17 \pm 0.28 $ & $368.14$       & $184.06$            \\ \cline{2-10}
+                             & \multirow{4}{*}{2} & $16$           & $112.05 \pm 2.16$       & $4452.33$                & $6.18 \cdot 10^{-4} \pm 5.90 \cdot 10^{-5}$ & $97.78 \pm 5.33$ & $-0.55 \pm 0.31 $ & $301.26 $       & $150.62$            \\
+                             &                    & $32$           & $115.41 \pm 0.51$       & $4656.78$                & $6.12 \cdot 10^{-4} \pm 2.15 \cdot 10^{-5}$ & $95.72 \pm 2.77$ & $-0.30 \pm 0.22 $ & $325.00 $       & $162.50$            \\
+                             &                    & $48$           & $117.66 \pm 0.65$       & $4862.74$                & $6.13 \cdot 10^{-4} \pm 1.26 \cdot 10^{-5}$ & $90.45 \pm 5.34$ & $-0.31 \pm 0.12 $ & $352.84$       & $176.42$            \\
+                             &                    & $64$           & $118.49 \pm 0.61$       & $5070.04$                & $6.16 \cdot 10^{-4} \pm 1.33 \cdot 10^{-5}$ & $91.72 \pm 3.85$ & $-0.34 \pm 0.29 $ & $384.78$       & $192.38$            \\ \hline
+\end{tabular}
+}
+\caption{Updated experiment results across strategies and configurations.}
+\label{tab:updated_results}
+\end{table}
+
+
+
+
+\begin{table}[]
+\begin{tabular}{ccccc}
+\hline
+\textbf{Strategy}            & \textbf{Width} & \textbf{Depth = 2}          & \textbf{Depth = 1}         & \textbf{Depth=None}                 \\ \hline
+\multirow{4}{*}{DS}         & $16$           & $94.00 \pm 3.32$            & $88.25 \pm 3.81$           & \multirow{4}{*}{$\mathbf{98.95 \pm 3.49}$} \\
+                             & $32$           & $92.09 \pm 3.12$            & $91.68 \pm 4.54$           &                               \\
+                             & $48$           & $90.29 \pm 4.73$            & $\mathit{95.04 \pm 4.36}$  &                               \\
+                             & $64$           & $89.55 \pm 10.24$           & $90.72 \pm 3.47$           &                               \\ \hline
+
+\multirow{4}{*}{DS\_LOCAL}  & $16$           & $\mathit{95.73 \pm 4.20}$   & $95.47 \pm 5.04$           & \multirow{4}{*}{$\mathbf{95.97 \pm 3.74}$} \\
+                             & $32$           & $93.55 \pm 4.91$            & $92.74 \pm 3.92$           &                               \\
+                             & $48$           & $89.77 \pm 5.42$            & $90.89 \pm 3.61$           &                               \\
+                             & $64$           & $93.16 \pm 3.63$            & $90.62 \pm 4.56$           &                               \\ \hline
+
+\multirow{4}{*}{DS\_GLOBAL} & $16$           & $\mathbf{97.78 \pm 5.33}$   & $94.67 \pm 2.78$           & \multirow{4}{*}{$94.23 \pm 3.54$} \\
+                             & $32$           & $\mathit{95.72 \pm 2.77}$   & $93.49 \pm 3.01$           &                               \\
+                             & $48$           & $90.45 \pm 5.34$            & $91.15 \pm 3.17$           &                               \\
+                             & $64$           & $91.72 \pm 3.85$            & $89.29 \pm 5.72$           &                               \\ \hline
+\end{tabular}
+\caption{Mean rewards after $50$ training iterations. The best results are indicated in bold, and the second best in italic. All results are close, especially considering the $90\%$ confidence interval. There is also no clear trend towards larger widths or depth.}
+\label{tab:width-DS-encoder}
+\end{table}

@@ -1,0 +1,49 @@
+name: ma_rl
+channels:
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - ca-certificates=2024.12.31
+  - libcxx=14.0.6
+  - libffi=3.4.4
+  - ncurses=6.4
+  - openssl=3.0.15
+  - pip=25.0
+  - python=3.9.21
+  - readline=8.2
+  - setuptools=75.8.0
+  - sqlite=3.45.3
+  - tk=8.6.14
+  - wheel=0.45.1
+  - xz=5.4.6
+  - zlib=1.2.13
+  - pip:
+      - cloudpickle==3.1.1
+      - filelock==3.17.0
+      - fsspec==2025.2.0
+      - gym==0.26.2
+      - gym-notices==0.0.8
+      - importlib-metadata==8.6.1
+      - jinja2==3.1.5
+      - markupsafe==3.0.2
+      - mpmath==1.3.0
+      - networkx==3.2.1
+      - numpy==2.0.2
+      - orjson==3.10.15
+      - packaging==24.2
+      - pandas==2.2.3
+      - pyglet==1.5.27
+      - python-dateutil==2.9.0.post0
+      - pytz==2025.1
+      - six==1.17.0
+      - sympy==1.13.1
+      - tensordict==0.6.2
+      - torch==2.5.1
+      - torchrl==0.6.0
+      - tqdm==4.66.4
+      - typing-extensions==4.12.2
+      - tzdata==2025.1
+      - vmas==1.4.3
+      - zipp==3.21.0
+prefix: /opt/miniconda3/envs/ma_rl

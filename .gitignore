@@ -1,0 +1,15 @@
+models
+*.pyc
+__pycache__
+/latex/out/main.out
+/latex/out/main.log
+/latex/out/main.lof
+/latex/out/main.bcf
+/latex/out/main.blg
+/latex/out/main.bbl
+/latex/out/main.aux
+/latex/out/main.run.xml
+/latex/out/main.synctex.gz
+/latex/out/main.toc
+/latex/out/chapters/*
+/thesis/out/
