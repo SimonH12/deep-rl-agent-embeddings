@@ -75,6 +75,18 @@ python -m src.mappo
 - Run the Jupyter Notebook `src/experiments_ma/example.ipynb`
 - All other experiments can also be tested in `src/experiments_ma`
 
+
+### VS Code
+When running Jupyter notebooks in VS Code, you may encounter import errors (e.g., modules in `src/` cannot be found).  
+To fix this, make sure you have a `.vscode/settings.json` file in your project with the following content:
+
+```json
+{
+    "python.envFile": "${workspaceFolder}/.env",
+    "jupyter.notebookFileRoot": "${workspaceFolder}/src"
+}
+```
+
 ---
 
 ## Repository Structure
