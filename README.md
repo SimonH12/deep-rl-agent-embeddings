@@ -39,13 +39,13 @@ Parts of this repository build upon the following projects:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/SimonH12/deep-rl-agent-embeddings.git
+   cd deep-rl-agent-embeddings
    ```
 2. Create conda environment from `.yml` file
     ```bash
     conda env create -f environment.yml
-    conda activate marl-thesis
+    conda activate ma_rl
     ```
 Note: Python 3.9 is recommended for compatibility.
 

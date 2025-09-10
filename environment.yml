@@ -1,49 +1,172 @@
 name: ma_rl
 channels:
   - defaults
+  - conda-forge
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - ca-certificates=2024.12.31
-  - libcxx=14.0.6
-  - libffi=3.4.4
-  - ncurses=6.4
-  - openssl=3.0.15
-  - pip=25.0
-  - python=3.9.21
-  - readline=8.2
-  - setuptools=75.8.0
-  - sqlite=3.45.3
-  - tk=8.6.14
-  - wheel=0.45.1
-  - xz=5.4.6
-  - zlib=1.2.13
+  - appnope=0.1.4=pyhd8ed1ab_1
+  - asttokens=3.0.0=pyhd8ed1ab_1
+  - ca-certificates=2025.1.31=hf0a4a13_0
+  - comm=0.2.2=pyhd8ed1ab_1
+  - debugpy=1.8.11=py39h313beb8_0
+  - exceptiongroup=1.2.2=pyhd8ed1ab_1
+  - executing=2.1.0=pyhd8ed1ab_1
+  - importlib-metadata=8.6.1=pyha770c72_0
+  - ipykernel=6.29.5=pyh57ce528_0
+  - ipython=8.18.1=pyh707e725_3
+  - jedi=0.19.2=pyhd8ed1ab_1
+  - jupyter_client=8.6.3=pyhd8ed1ab_1
+  - jupyter_core=5.7.2=pyh31011fe_1
+  - libcxx=14.0.6=h848a8c0_0
+  - libffi=3.4.4=hca03da5_1
+  - libsodium=1.0.18=h27ca646_1
+  - matplotlib-inline=0.1.7=pyhd8ed1ab_1
+  - ncurses=6.4=h313beb8_0
+  - nest-asyncio=1.6.0=pyhd8ed1ab_1
+  - openssl=3.4.0=h81ee809_1
+  - packaging=24.2=pyhd8ed1ab_2
+  - parso=0.8.4=pyhd8ed1ab_1
+  - pexpect=4.9.0=pyhd8ed1ab_1
+  - pickleshare=0.7.5=pyhd8ed1ab_1004
+  - pip=25.0=py39hca03da5_0
+  - platformdirs=4.3.6=pyhd8ed1ab_1
+  - prompt-toolkit=3.0.50=pyha770c72_0
+  - psutil=5.8.0=py39h5161555_1
+  - ptyprocess=0.7.0=pyhd8ed1ab_1
+  - pure_eval=0.2.3=pyhd8ed1ab_1
+  - pygments=2.19.1=pyhd8ed1ab_0
+  - python=3.9.21=hb885b13_1
+  - python-dateutil=2.9.0.post0=pyhff2d567_1
+  - python_abi=3.9=2_cp39
+  - pyzmq=26.2.0=py39h313beb8_0
+  - readline=8.2=h1a28f6b_0
+  - setuptools=75.8.0=py39hca03da5_0
+  - six=1.17.0=pyhd8ed1ab_0
+  - sqlite=3.45.3=h80987f9_0
+  - stack_data=0.6.3=pyhd8ed1ab_1
+  - tk=8.6.14=h6ba3021_0
+  - tornado=6.4.2=py39h80987f9_0
+  - traitlets=5.14.3=pyhd8ed1ab_1
+  - typing_extensions=4.12.2=pyha770c72_1
+  - wcwidth=0.2.13=pyhd8ed1ab_1
+  - wheel=0.45.1=py39hca03da5_0
+  - xz=5.4.6=h80987f9_1
+  - zeromq=4.3.5=h313beb8_0
+  - zipp=3.21.0=pyhd8ed1ab_1
+  - zlib=1.2.13=h18a0788_1
   - pip:
+      - aiohappyeyeballs==2.6.1
+      - aiohttp==3.11.14
+      - aiosignal==1.3.2
+      - anyio==4.8.0
+      - argon2-cffi==23.1.0
+      - argon2-cffi-bindings==21.2.0
+      - arrow==1.3.0
+      - async-lru==2.0.4
+      - async-timeout==5.0.1
+      - attrs==25.1.0
+      - babel==2.17.0
+      - beautifulsoup4==4.13.3
+      - bleach==6.2.0
+      - certifi==2025.1.31
+      - cffi==1.17.1
+      - charset-normalizer==3.4.1
       - cloudpickle==3.1.1
+      - contourpy==1.3.0
+      - cycler==0.12.1
+      - decorator==4.4.2
+      - defusedxml==0.7.1
+      - fastjsonschema==2.21.1
       - filelock==3.17.0
+      - fonttools==4.55.8
+      - fqdn==1.5.1
+      - frozenlist==1.5.0
       - fsspec==2025.2.0
+      - gensim==4.3.3
       - gym==0.26.2
       - gym-notices==0.0.8
-      - importlib-metadata==8.6.1
+      - h11==0.14.0
+      - httpcore==1.0.7
+      - httpx==0.28.1
+      - idna==3.10
+      - importlib-resources==6.5.2
+      - isoduration==20.11.0
       - jinja2==3.1.5
+      - joblib==1.4.2
+      - json5==0.10.0
+      - jsonpointer==3.0.0
+      - jsonschema==4.23.0
+      - jsonschema-specifications==2024.10.1
+      - jupyter-events==0.12.0
+      - jupyter-lsp==2.2.5
+      - jupyter-server==2.15.0
+      - jupyter-server-terminals==0.5.3
+      - jupyterlab==4.3.5
+      - jupyterlab-pygments==0.3.0
+      - jupyterlab-server==2.27.3
+      - kiwisolver==1.4.7
+      - levenshtein==0.27.1
       - markupsafe==3.0.2
+      - matplotlib==3.9.4
+      - mistune==3.1.2
       - mpmath==1.3.0
-      - networkx==3.2.1
-      - numpy==2.0.2
+      - multidict==6.2.0
+      - nbclient==0.10.2
+      - nbconvert==7.16.6
+      - nbformat==5.10.4
+      - networkx==2.6.3
+      - notebook==7.3.2
+      - notebook-shim==0.2.4
+      - numpy==1.23.5
       - orjson==3.10.15
-      - packaging==24.2
-      - pandas==2.2.3
+      - overrides==7.7.0
+      - pandas==1.3.5
+      - pandocfilters==1.5.1
+      - pillow==11.1.0
+      - prometheus-client==0.21.1
+      - propcache==0.3.1
+      - ptflops==0.7.4
+      - pycparser==2.22
       - pyglet==1.5.27
-      - python-dateutil==2.9.0.post0
+      - pygsp==0.5.1
+      - pyparsing==3.2.1
+      - python-json-logger==3.2.1
+      - python-levenshtein==0.27.1
+      - python-louvain==0.16
       - pytz==2025.1
-      - six==1.17.0
+      - pyyaml==6.0.2
+      - rapidfuzz==3.12.2
+      - referencing==0.36.2
+      - requests==2.32.3
+      - rfc3339-validator==0.1.4
+      - rfc3986-validator==0.1.1
+      - rpds-py==0.23.1
+      - scikit-learn==1.6.1
+      - scipy==1.13.1
+      - seaborn==0.13.2
+      - send2trash==1.8.3
+      - smart-open==7.1.0
+      - sniffio==1.3.1
+      - soupsieve==2.6
       - sympy==1.13.1
       - tensordict==0.6.2
+      - terminado==0.18.1
+      - threadpoolctl==3.5.0
+      - tinycss2==1.4.0
+      - tomli==2.2.1
       - torch==2.5.1
+      - torch-geometric==2.6.1
       - torchrl==0.6.0
       - tqdm==4.66.4
-      - typing-extensions==4.12.2
+      - types-python-dateutil==2.9.0.20241206
       - tzdata==2025.1
+      - uri-template==1.3.0
+      - urllib3==2.3.0
       - vmas==1.4.3
-      - zipp==3.21.0
+      - webcolors==24.11.1
+      - webencodings==0.5.1
+      - websocket-client==1.8.0
+      - wrapt==1.17.2
+      - yarl==1.18.3
 prefix: /opt/miniconda3/envs/ma_rl
