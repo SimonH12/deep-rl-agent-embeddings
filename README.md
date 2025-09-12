@@ -20,7 +20,7 @@ Overall, this thesis establishes that permutation- and agent-count invariant cri
 
 The full Master's thesis can be downloaded or viewed here:  
 
-[Download Thesis (PDF)](MA_Thesis_Simon_Hampp.pdf) TODO: add pdf
+[Download Thesis (PDF)](thesis/thesis.pdf)
 
 
 ---
